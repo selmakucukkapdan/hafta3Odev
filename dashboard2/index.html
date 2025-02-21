@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: #222;
+        }
+
+        .container {
+            background-color: #333;
+            width: 450px;
+            height: 450px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .boxs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .addMoney, .exchange, .details, .more {
+            width: 240px;
+            height: 100px;
+            color: aliceblue;
+            background-color: grey;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .addMoney img, .exchange img, .details img, .more img {
+            width: 24px;
+        }
+
+        .bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-bottom: 10px;   
+        }
+
+        .left-side {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .title {
+            color: white;
+            font-size: 16px;
+        }
+
+        .left-side span {
+            font-size: 10px;
+            color: lightgrey;
+            margin-top: 4px;
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .right-side span {
+            font-size: 14px;
+            color: white;
+        }
+
+        .right-side .number {
+            font-size: 12px;
+            color: lightgray;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxs">
+            <div class="addMoney">
+                <img src="icons8-add-30.png" alt="">
+                <h4>Add money</h4>
+            </div>
+            <div class="exchange">
+                <img src="icons8-exchange-48.png" alt="">
+                <h4>Exchange</h4>
+            </div>
+            <div class="details">
+                <img src="icons8-view-details-24.png" alt="">
+                <h4>Details</h4>
+            </div>
+            <div class="more">
+                <img src="icons8-more-50.png" alt="">
+                <h4>More</h4>
+            </div>
+        </div>
+
+        <div class="bottom-content">
+            <div class="left-side">
+                <div class="brand">
+                    <img src="logo.png" alt="">
+                    <h3 class="title">NVIDIA</h3>
+                </div>
+                <span>Yesterday, 1:35 PM</span>
+            </div>
+            <div class="right-side">
+                <span>-$17.80</span>
+                <span class="number">0.05 NVDA</span>
+            </div>
+        </div>
+
+        <div class="bottom-content">
+            <div class="left-side">
+                <div class="brand">
+                    <img src="Tesla.png" alt="">
+                    <h3 class="title">Tesla</h3>
+                </div>
+                <span>Sep 27, 6:21 PM</span>
+            </div>
+            <div class="right-side">
+                <span>-$10,000.00</span>
+                <span class="number">0.12 TSLA</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
